@@ -1,0 +1,142 @@
+/* ================= RESET Y GENERAL ================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-color: #000;   /* negro */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ================= CONTENEDOR GENERAL ================= */
+.contenedor {
+    max-width: 900px;   /* MÁS ANCHO */
+    width: 95%;         /* RESPONSIVO */
+    margin: auto;
+    background-color: #ffe0b3;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffe0b3;
+}
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ================= FIELDSETS ================= */
+fieldset {
+    margin-bottom: 10px;   /* antes estaba muy grande */
+    padding: 10px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+/* ================= INPUTS Y BOTONES ================= */
+input {
+    margin: 0;
+}
+
+button {
+    padding: 6px 14px;
+}
+
+
+/* ================= BLOQUE PAQUETES + PEDIDOS ================= */
+.bloque-superior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;  /* espacio horizontal */
+    row-gap: 40px;     /* espacio entre líneas */
+}
+
+/* ================= PEDIDOS ================= */
+.pedidos-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(120px, 150px);
+    gap: 8px 12px;
+    align-items: center;
+}
+
+/* ================= RESULTADOS ================= */
+.resultado {
+    background-color: #f7f7f7;
+}
+
+.resultado-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;   /* más espacio */
+}
+
+
+.col-izq,
+.col-der {
+    background-color: #ffe0b3;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* ================= FILAS DE RESULTADO ================= */
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+/* ================= CAJAS BLANCAS UNIFICADAS ================= */
+.caja {
+    background-color: #fff;
+    border: 1px solid #444;
+    padding: 6px 10px;
+    min-width: 120px;
+    text-align: right;
+    border-radius: 4px;
+}
+
+/* CUANDO ES INPUT */
+input.caja {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ================= TOTAL DESTACADO ================= */
+.total-final {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.total-final .caja {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ================= ERRORES ================= */
+.error {
+    color: red;
+    font-weight: bold;
+}
+.autor {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color:  #13973f;
+}

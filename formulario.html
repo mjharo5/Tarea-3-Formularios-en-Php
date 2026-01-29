@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h2>Login to Account</h2>
+
+
+<div class="contenedor">
+
+    <!-- LOGIN -->
+    <form action="login.php" method="POST" class="card">
+        <h2>Login to Account</h2>
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">LOGIN</button>
+    </form>
+
+    <!-- REGISTRO -->
+    <form action="registro.php" method="POST" class="card">
+        <h2>Create Account</h2>
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <input type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+        <button type="submit">REGISTER</button>
+    </form>
+
+</div>
+
+</body>
+</html>
