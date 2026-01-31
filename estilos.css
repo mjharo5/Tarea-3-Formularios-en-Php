@@ -1,43 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
+/* ===== ESTILO GENERAL ===== */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===== CONTENEDOR ===== */
 .contenedor {
     display: flex;
     justify-content: center;
-    gap: 80px;
-    margin-top: 100px;
+    gap: 30px;
+    padding-top: 40px;
 }
 
+/* ===== TARJETAS ===== */
 .card {
-    background: white;
-    padding: 30px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== TITULOS ===== */
 .card h2 {
     text-align: center;
+    margin-bottom: 15px;
+    color: #1e3c72;
 }
 
+/* ===== INPUTS ===== */
 .card input {
     width: 100%;
-    padding: 8px;
-    margin: 8px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
+/* ===== BOTONES ===== */
 .card button {
     width: 100%;
     padding: 10px;
-    background: hsl(200, 76%, 45%);
+    background-color: #0d6efd;
     border: none;
     color: white;
     font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 .card button:hover {
-    background:  hsl(200, 76%, 45%);
+    background-color: #084298;
 }
